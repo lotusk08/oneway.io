@@ -217,7 +217,7 @@ export default function TermsClientPage() {
                     <b>Fees</b>
                   </i>
                   ”). For a description of Payload’s current standard rates and pricing, please
-                  visit <a href="/cloud-pricing">https://payloadcms.com/cloud-pricing</a>. Payload
+                  visit <a href="/cloud-pricing">#/cloud-pricing</a>. Payload
                   offers the Service on a subscription basis with different service tiers to choose.
                   Customer will pay for any excess usage beyond any usage limitations or metrics on
                   which Fees are based at the rates set forth in the Order, or, if no such rates are

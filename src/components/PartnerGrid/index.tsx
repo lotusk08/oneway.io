@@ -11,12 +11,18 @@ type PartnerGridProps = {
 
 export const PartnerGrid = (props: PartnerGridProps) => {
   const { featured, partners } = props
+
+  // Add safety check
+  if (!partners || !Array.isArray(partners)) {
+    return null
+  }
+
   return (
     <div className={classes.PartnerGridWrap}>
       {partners.map((partner) => {
         return (
           typeof partner !== 'string' && (
-            <PartnerCard {...partner} key={partner.id + featured ? '_featured' : ''} />
+            <PartnerCard {...partner} key={partner.id + (featured ? '_featured' : '')} />
           )
         )
       })}

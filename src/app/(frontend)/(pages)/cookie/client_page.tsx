@@ -39,7 +39,7 @@ export const CookieClientPage: React.FC = () => {
               This cookie policy explains how Payload CMS, Inc. and our subsidiaries and affiliates
               ("<b>Payload</b>," "<b>we</b>", “<b>us</b>” or "<b>our</b>") use cookies to help
               improve your experience of our website at{' '}
-              <a href="https://payloadcms.com/">https://payloadcms.com</a> and any other website
+              <a href="https://oneway.io/">https://oneway.io</a> and any other website
               that we own or control and which posts or links to this cookie policy (collectively,
               the “Sites”). This cookie policy complements Payload’s privacy policy. It covers the
               use of cookies between your device and our Sites.

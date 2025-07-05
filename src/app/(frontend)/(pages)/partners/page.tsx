@@ -38,16 +38,16 @@ export default async function Partners() {
   const partnerList = partners.map((partner) => {
     return {
       ...partner,
-      budgets: partner.budgets
+      budgets: (partner.budgets || [])
         .map((budget) => typeof budget !== 'string' && budget.value)
         .filter((value): value is string => !!value),
-      industries: partner.industries
+      industries: (partner.industries || [])
         .map((industry) => typeof industry !== 'string' && industry.value)
         .filter((value): value is string => !!value),
-      regions: partner.regions
+      regions: (partner.regions || [])
         .map((region) => typeof region !== 'string' && region.value)
         .filter((value): value is string => !!value),
-      specialties: partner.specialties
+      specialties: (partner.specialties || [])
         .map((specialty) => typeof specialty !== 'string' && specialty.value)
         .filter((value): value is string => !!value),
     }
@@ -93,7 +93,7 @@ export default async function Partners() {
               <h2 className="cols-12 cols-m-8">Featured Partners</h2>
               <p className="cols-4 start-13 cols-m-8 start-m-1">{featuredPartners.description}</p>
             </div>
-            <PartnerGrid featured partners={featuredPartners.partners} />
+            <PartnerGrid featured partners={featuredPartners.partners || []} />
           </div>
         )}
         <BackgroundGrid />

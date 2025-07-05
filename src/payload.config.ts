@@ -291,7 +291,7 @@ export default buildConfig({
   ],
   cors: [
     process.env.PAYLOAD_PUBLIC_APP_URL || '',
-    'https://payloadcms.com',
+    'https://oneway.io',
     'https://discord.com/api',
   ].filter(Boolean),
   db: mongooseAdapter({

@@ -38,7 +38,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://payloadcms.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://oneway.io'),
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
